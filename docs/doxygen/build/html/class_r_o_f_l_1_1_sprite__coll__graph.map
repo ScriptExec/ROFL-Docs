@@ -1,0 +1,7 @@
+<map id="ROFL::Sprite" name="ROFL::Sprite">
+<area shape="rect" id="node1" title=" " alt="" coords="255,124,354,151"/>
+<area shape="rect" id="node2" href="$struct_r_o_f_l_1_1_vec2.html" title=" " alt="" coords="5,5,148,32"/>
+<area shape="rect" id="node3" href="$struct_r_o_f_l_1_1_rect.html" title=" " alt="" coords="172,5,301,32"/>
+<area shape="rect" id="node4" href="$struct_r_o_f_l_1_1_color.html" title=" " alt="" coords="325,5,420,32"/>
+<area shape="rect" id="node5" href="$class_r_o_f_l_1_1_texture.html" title=" " alt="" coords="445,5,551,32"/>
+</map>

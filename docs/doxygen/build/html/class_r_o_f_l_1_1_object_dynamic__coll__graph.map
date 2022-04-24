@@ -1,0 +1,11 @@
+<map id="ROFL::ObjectDynamic" name="ROFL::ObjectDynamic">
+<area shape="rect" id="node1" title=" " alt="" coords="5,425,159,452"/>
+<area shape="rect" id="node2" href="$class_r_o_f_l_1_1_object_base.html" title=" " alt="" coords="159,349,291,376"/>
+<area shape="rect" id="node3" href="$struct_r_o_f_l_1_1_collider.html" title=" " alt="" coords="506,259,613,285"/>
+<area shape="rect" id="node4" href="$class_r_o_f_l_1_1_sprite.html" title=" " alt="" coords="285,124,383,151"/>
+<area shape="rect" id="node9" href="$class_r_o_f_l_1_1_animated_sprite.html" title=" " alt="" coords="328,259,481,285"/>
+<area shape="rect" id="node5" href="$struct_r_o_f_l_1_1_vec2.html" title=" " alt="" coords="85,5,228,32"/>
+<area shape="rect" id="node6" href="$struct_r_o_f_l_1_1_rect.html" title=" " alt="" coords="508,5,637,32"/>
+<area shape="rect" id="node7" href="$struct_r_o_f_l_1_1_color.html" title=" " alt="" coords="257,5,352,32"/>
+<area shape="rect" id="node8" href="$class_r_o_f_l_1_1_texture.html" title=" " alt="" coords="377,5,483,32"/>
+</map>

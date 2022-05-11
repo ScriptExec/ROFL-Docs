@@ -103,7 +103,33 @@ $(document).ready(function(){initNavTree('md_pages_hello.html',''); initResizabl
   <div class="headertitle"><div class="title">Hello ROFL </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"></div></div><!-- contents -->
+<div class="textblock"><h1><a class="anchor" id="autotoc_md12"></a>
+## Setup</h1>
+<h2><a class="anchor" id="autotoc_md13"></a>
+Visual Studio</h2>
+<p >You need to change the Runtime Library which can be found under <code>C/C++&gt;Code Generation&gt;Runtime Library</code>. Where you need to set, depending on your configuration:</p><ul>
+<li>Debug: <code>Multi-threaded Debug (/MTd)</code></li>
+<li>Release: <code>Multi-threaded (/MT)</code> </li>
+</ul>
+<h1><a class="anchor" id="autotoc_md14"></a>
+Linking</h1>
+<p >You need to link a static library (.lib) in your project, depending on your configuration:</p><ul>
+<li>Debug: <code>ROFL_debug.lib</code></li>
+<li>Release: <code>ROFL.lib</code></li>
+</ul>
+<h1><a class="anchor" id="autotoc_md15"></a>
+Getting Started</h1>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;ROFL_Engine.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main()</div>
+<div class="line">{</div>
+<div class="line">    ROFL_Engine engine;</div>
+<div class="line">    engine.init();</div>
+<div class="line">    engine.run();</div>
+<div class="line">    engine.shutdown();</div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -106,83 +106,24 @@ $(document).ready(function(){initNavTree('_u_u_i_d_8h_source.html',''); initResi
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;includes.h&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// //////////////////////////////////////////////////////////</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">// sha256.h</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// Copyright (c) 2014,2015 Stephan Brumme. All rights reserved.</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// see http://create.stephan-brumme.com/disclaimer.html</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">//</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// define fixed size integer types</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifdef _MSC_VER</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// Windows</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> __int8  uint8_t;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> __int32 uint32_t;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> __int64 uint64_t;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// GCC</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_____r_o_f_l.html">__ROFL</a></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_____r_o_f_l_1_1_s_h_a256.html">   37</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_____r_o_f_l_1_1_s_h_a256.html">SHA256</a> <span class="comment">//: public Hash</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keyword">enum</span> { BlockSize = 512 / 8, HashBytes = 32 };</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <a class="code hl_function" href="class_____r_o_f_l_1_1_s_h_a256.html#a805f958b2da5e90d6a4afa40aced52a3">SHA256</a>();</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        std::string <a class="code hl_function" href="class_____r_o_f_l_1_1_s_h_a256.html#ab1d6cd8d4ec93b0ec04641bc7a7a53c2">operator()</a>(<span class="keyword">const</span> <span class="keywordtype">void</span>* data, <span class="keywordtype">size_t</span> numBytes);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        std::string <a class="code hl_function" href="class_____r_o_f_l_1_1_s_h_a256.html#ab1d6cd8d4ec93b0ec04641bc7a7a53c2">operator()</a>(<span class="keyword">const</span> std::string&amp; text);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_____r_o_f_l_1_1_s_h_a256.html#a8daab5129b5c6bc82a97d140cc031a00">add</a>(<span class="keyword">const</span> <span class="keywordtype">void</span>* data, <span class="keywordtype">size_t</span> numBytes);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        std::string <a class="code hl_function" href="class_____r_o_f_l_1_1_s_h_a256.html#a663e87d278f5e741b46d47b98bcabc1c">getHash</a>();</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_____r_o_f_l_1_1_s_h_a256.html#a62c190b4955f11850033e09efb73e615">   57</a></span>        <span class="keywordtype">void</span>        <a class="code hl_function" href="class_____r_o_f_l_1_1_s_h_a256.html#a62c190b4955f11850033e09efb73e615">getHash</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> buffer[HashBytes]);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_____r_o_f_l_1_1_s_h_a256.html#a6a52fc76cadb0ba5c0767bdecc066c9d">reset</a>();</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordtype">void</span> processBlock(<span class="keyword">const</span> <span class="keywordtype">void</span>* data);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keywordtype">void</span> processBuffer();</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        uint64_t m_numBytes;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordtype">size_t</span>   m_bufferSize;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        uint8_t  m_buffer[BlockSize];</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keyword">enum</span> { HashValues = HashBytes / 4 };</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        uint32_t m_hash[HashValues];</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    };</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">namespace </span>ROFL</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>{</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_r_o_f_l_1_1_u_u_i_d.html">   83</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_r_o_f_l_1_1_u_u_i_d.html">UUID</a></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    {</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <a class="code hl_class" href="class_r_o_f_l_1_1_u_u_i_d.html">UUID</a>() = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> chars[];</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keyword">static</span> std::random_device engine;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keyword">static</span> std::string GetUUID();</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keyword">static</span> std::string GetHash256(<span class="keyword">const</span> std::string&amp; value);</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keyword">static</span> std::string GetHash256(<span class="keyword">const</span> std::string&amp; data, <span class="keywordtype">size_t</span> bytes);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    };</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
-<div class="ttc" id="aclass_____r_o_f_l_1_1_s_h_a256_html"><div class="ttname"><a href="class_____r_o_f_l_1_1_s_h_a256.html">__ROFL::SHA256</a></div><div class="ttdef"><b>Definition:</b> UUID.h:38</div></div>
-<div class="ttc" id="aclass_____r_o_f_l_1_1_s_h_a256_html_a62c190b4955f11850033e09efb73e615"><div class="ttname"><a href="class_____r_o_f_l_1_1_s_h_a256.html#a62c190b4955f11850033e09efb73e615">__ROFL::SHA256::getHash</a></div><div class="ttdeci">void getHash(unsigned char buffer[HashBytes])</div><div class="ttdoc">return latest hash as bytes</div></div>
-<div class="ttc" id="aclass_____r_o_f_l_1_1_s_h_a256_html_a663e87d278f5e741b46d47b98bcabc1c"><div class="ttname"><a href="class_____r_o_f_l_1_1_s_h_a256.html#a663e87d278f5e741b46d47b98bcabc1c">__ROFL::SHA256::getHash</a></div><div class="ttdeci">std::string getHash()</div><div class="ttdoc">return latest hash as 64 hex characters</div><div class="ttdef"><b>Definition:</b> UUID.cpp:336</div></div>
-<div class="ttc" id="aclass_____r_o_f_l_1_1_s_h_a256_html_a6a52fc76cadb0ba5c0767bdecc066c9d"><div class="ttname"><a href="class_____r_o_f_l_1_1_s_h_a256.html#a6a52fc76cadb0ba5c0767bdecc066c9d">__ROFL::SHA256::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdoc">restart</div><div class="ttdef"><b>Definition:</b> UUID.cpp:48</div></div>
-<div class="ttc" id="aclass_____r_o_f_l_1_1_s_h_a256_html_a805f958b2da5e90d6a4afa40aced52a3"><div class="ttname"><a href="class_____r_o_f_l_1_1_s_h_a256.html#a805f958b2da5e90d6a4afa40aced52a3">__ROFL::SHA256::SHA256</a></div><div class="ttdeci">SHA256()</div><div class="ttdoc">same as reset()</div><div class="ttdef"><b>Definition:</b> UUID.cpp:42</div></div>
-<div class="ttc" id="aclass_____r_o_f_l_1_1_s_h_a256_html_a8daab5129b5c6bc82a97d140cc031a00"><div class="ttname"><a href="class_____r_o_f_l_1_1_s_h_a256.html#a8daab5129b5c6bc82a97d140cc031a00">__ROFL::SHA256::add</a></div><div class="ttdeci">void add(const void *data, size_t numBytes)</div><div class="ttdoc">add arbitrary number of bytes</div><div class="ttdef"><b>Definition:</b> UUID.cpp:226</div></div>
-<div class="ttc" id="aclass_____r_o_f_l_1_1_s_h_a256_html_ab1d6cd8d4ec93b0ec04641bc7a7a53c2"><div class="ttname"><a href="class_____r_o_f_l_1_1_s_h_a256.html#ab1d6cd8d4ec93b0ec04641bc7a7a53c2">__ROFL::SHA256::operator()</a></div><div class="ttdeci">std::string operator()(const void *data, size_t numBytes)</div><div class="ttdoc">compute SHA256 of a memory block</div><div class="ttdef"><b>Definition:</b> UUID.cpp:382</div></div>
-<div class="ttc" id="aclass_r_o_f_l_1_1_u_u_i_d_html"><div class="ttname"><a href="class_r_o_f_l_1_1_u_u_i_d.html">ROFL::UUID</a></div><div class="ttdef"><b>Definition:</b> UUID.h:84</div></div>
-<div class="ttc" id="anamespace_____r_o_f_l_html"><div class="ttname"><a href="namespace_____r_o_f_l.html">__ROFL</a></div><div class="ttdoc">compute SHA256 hash</div><div class="ttdef"><b>Definition:</b> UUID.cpp:5</div></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span>ROFL</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_r_o_f_l_1_1_u_u_i_d.html">    6</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_r_o_f_l_1_1_u_u_i_d.html">UUID</a></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        <a class="code hl_class" href="class_r_o_f_l_1_1_u_u_i_d.html">UUID</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> chars[];</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keyword">static</span> std::random_device engine;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keyword">static</span> std::string GetUUID();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keyword">static</span> std::string GetHash256(<span class="keyword">const</span> std::string&amp; value);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keyword">static</span> std::string GetHash256(<span class="keyword">const</span> std::string&amp; data, <span class="keywordtype">size_t</span> bytes);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    };</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
+<div class="ttc" id="aclass_r_o_f_l_1_1_u_u_i_d_html"><div class="ttname"><a href="class_r_o_f_l_1_1_u_u_i_d.html">ROFL::UUID</a></div><div class="ttdef"><b>Definition:</b> UUID.h:7</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

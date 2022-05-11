@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['joystick_0',['Joystick',['../class_r_o_f_l_1_1_joystick.html',1,'ROFL']]]
+  ['keyboard_0',['Keyboard',['../class_r_o_f_l_1_1_keyboard.html',1,'ROFL']]]
 ];

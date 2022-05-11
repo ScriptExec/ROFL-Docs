@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('_asset_container_8h_source.html',''); 
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;includes.h&quot;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;source/Debug/Debug.h&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;source/Core/Debug.h&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;source/Utility/Path/Path.h&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span>ROFL</div>
@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('_asset_container_8h_source.html',''); 
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <span class="keywordtype">size_t</span> buffer_size() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keywordtype">size_t</span> dictionary_size();</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keywordtype">void</span> Unload();</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keywordtype">void</span> ReadBufferPart(<a class="code hl_class" href="class_r_o_f_l_1_1_binary_stream.html">BinaryStream</a>&amp; stream);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keywordtype">void</span> ReadBufferPart(BinaryStream&amp; stream);</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            std::string name() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            std::string extension() <span class="keyword">const</span>;</div>
@@ -216,7 +216,7 @@ $(document).ready(function(){initNavTree('_asset_container_8h_source.html',''); 
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="comment">//      std::cout &lt;&lt; &quot;position = 0 or there&#39;s no saved filepath.\n&quot;;</span></div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="comment">//  }</span></div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="comment">//}</span></div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        ErrorCode <a class="code hl_function" href="class_r_o_f_l_1_1_asset_container.html#a68a8d89c4f2efa918bd749038bbbf483">Save</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_r_o_f_l_1_1_path.html">Path</a>&amp; filepath);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        ErrorCode Save(<span class="keyword">const</span> <a class="code hl_class" href="class_r_o_f_l_1_1_path.html">Path</a>&amp; filepath);</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        ErrorCode ReadPackage(<span class="keyword">const</span> <a class="code hl_class" href="class_r_o_f_l_1_1_path.html">Path</a>&amp; filepath);</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <span class="keywordtype">void</span> SetKey(<span class="keyword">const</span> std::string&amp; key);</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
@@ -224,14 +224,12 @@ $(document).ready(function(){initNavTree('_asset_container_8h_source.html',''); 
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <span class="keywordtype">size_t</span> file_count() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        std::unordered_map&lt;std::string, Folder&gt;&amp; folders();</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keywordtype">void</span> WriteDictionary(<a class="code hl_class" href="class_r_o_f_l_1_1_binary_stream.html">BinaryStream</a>&amp; f);</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="keywordtype">void</span> WriteFileInDictionary(<a class="code hl_class" href="class_r_o_f_l_1_1_binary_stream.html">BinaryStream</a>&amp; f, File&amp; file);</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keywordtype">void</span> ReadFileFromContainer(<a class="code hl_class" href="class_r_o_f_l_1_1_binary_stream.html">BinaryStream</a>&amp; f, <span class="keyword">const</span> std::string&amp; foldername, <span class="keyword">const</span> <a class="code hl_class" href="class_r_o_f_l_1_1_path.html">Path</a>&amp; filepath);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keywordtype">void</span> WriteDictionary(BinaryStream&amp; f);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="keywordtype">void</span> WriteFileInDictionary(BinaryStream&amp; f, File&amp; file);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keywordtype">void</span> ReadFileFromContainer(BinaryStream&amp; f, <span class="keyword">const</span> std::string&amp; foldername, <span class="keyword">const</span> <a class="code hl_class" href="class_r_o_f_l_1_1_path.html">Path</a>&amp; filepath);</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    };</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>}</div>
 <div class="ttc" id="aclass_r_o_f_l_1_1_asset_container_html"><div class="ttname"><a href="class_r_o_f_l_1_1_asset_container.html">ROFL::AssetContainer</a></div><div class="ttdef"><b>Definition:</b> AssetContainer.h:11</div></div>
-<div class="ttc" id="aclass_r_o_f_l_1_1_asset_container_html_a68a8d89c4f2efa918bd749038bbbf483"><div class="ttname"><a href="class_r_o_f_l_1_1_asset_container.html#a68a8d89c4f2efa918bd749038bbbf483">ROFL::AssetContainer::Save</a></div><div class="ttdeci">ErrorCode Save(const Path &amp;filepath)</div><div class="ttdef"><b>Definition:</b> AssetContainer.cpp:469</div></div>
-<div class="ttc" id="aclass_r_o_f_l_1_1_binary_stream_html"><div class="ttname"><a href="class_r_o_f_l_1_1_binary_stream.html">ROFL::BinaryStream</a></div><div class="ttdef"><b>Definition:</b> AssetContainer.cpp:8</div></div>
 <div class="ttc" id="aclass_r_o_f_l_1_1_path_html"><div class="ttname"><a href="class_r_o_f_l_1_1_path.html">ROFL::Path</a></div><div class="ttdef"><b>Definition:</b> Path.h:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

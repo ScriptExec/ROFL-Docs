@@ -26,24 +26,36 @@ var NAVTREE =
 [
   [ "ROFL", "index.html", [
     [ "Overview", "index.html", [
-      [ "WorkDir", "index.html#autotoc_md1", null ],
-      [ "C/C++>Code Generation>Runtime Library", "index.html#autotoc_md2", null ],
-      [ "Include", "index.html#autotoc_md3", null ],
-      [ "Lib", "index.html#autotoc_md4", null ],
-      [ "Usage", "index.html#autotoc_md5", null ],
-      [ "To do", "index.html#autotoc_md6", null ]
+      [ "ROFL", "index.html#autotoc_md1", null ],
+      [ "Features", "index.html#autotoc_md3", [
+        [ "Rendering Pipeline", "index.html#autotoc_md4", null ],
+        [ "Input", "index.html#autotoc_md5", null ],
+        [ "AssetManager", "index.html#autotoc_md6", null ],
+        [ "Objects", "index.html#autotoc_md7", null ]
+      ] ],
+      [ "Platforms", "index.html#autotoc_md9", null ],
+      [ "Include", "index.html#autotoc_md10", null ]
     ] ],
-    [ "Hello ROFL", "md_pages_hello.html", null ],
-    [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", "namespaces_dup" ]
+    [ "Hello ROFL", "md_pages_hello.html", [
+      [ "## Setup", "md_pages_hello.html#autotoc_md12", [
+        [ "Visual Studio", "md_pages_hello.html#autotoc_md13", null ]
+      ] ],
+      [ "Linking", "md_pages_hello.html#autotoc_md14", null ],
+      [ "Getting Started", "md_pages_hello.html#autotoc_md15", null ]
     ] ],
-    [ "Classes", "annotated.html", [
-      [ "Class List", "annotated.html", "annotated_dup" ],
-      [ "Class Index", "classes.html", null ],
+    [ "License", "md_pages_license.html", [
+      [ "ROFL", "md_pages_license.html#autotoc_md17", null ],
+      [ "Sublicenses", "md_pages_license.html#autotoc_md18", null ]
+    ] ],
+    [ "Modules", "modules.html", "modules" ],
+    [ "Data Structures", "annotated.html", [
+      [ "Data Structures", "annotated.html", "annotated_dup" ],
+      [ "Data Structure Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
-      [ "Class Members", "functions.html", [
+      [ "Data Fields", "functions.html", [
         [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ]
+        [ "Functions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -54,8 +66,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_asset_container_8h_source.html",
-"dir_7566ebb12c9ae9f243aab861fff15621.html"
+"_animation_8h_source.html",
+"struct_r_o_f_l_1_1_polygon_collider_component.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

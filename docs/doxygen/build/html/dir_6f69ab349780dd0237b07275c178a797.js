@@ -2,7 +2,6 @@ var dir_6f69ab349780dd0237b07275c178a797 =
 [
     [ "Font", "dir_9b33192c6bb9024617534d0b4f69df3d.html", "dir_9b33192c6bb9024617534d0b4f69df3d" ],
     [ "Images", "dir_df1cd7a934c934f5202df590369b2a5e.html", "dir_df1cd7a934c934f5202df590369b2a5e" ],
-    [ "Lighting", "dir_9f3949640fa1ae48c5346e3c6717bd12.html", "dir_9f3949640fa1ae48c5346e3c6717bd12" ],
     [ "Particle", "dir_f9fc1efbe61bd7ae380bcb6de9d1808f.html", "dir_f9fc1efbe61bd7ae380bcb6de9d1808f" ],
     [ "PostProcess", "dir_8523be95f22cc8b06bae77bdcabe37f7.html", "dir_8523be95f22cc8b06bae77bdcabe37f7" ],
     [ "Renderer", "dir_032c42f697cfa13897cb2b7d294430cd.html", "dir_032c42f697cfa13897cb2b7d294430cd" ],

@@ -105,42 +105,25 @@ $(document).ready(function(){initNavTree('_geometry_8h_source.html',''); initRes
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;source/Definitions.h&quot;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;source/Utility/Math/Vector/Vector.h&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;source/Utility/Math/Shapes/Shapes.h&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;source/Utility/Math/Ray/Ray.h&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;source/Math/Vector.h&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;source/Math/Shapes/Shapes.h&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;source/Math/Ray/Ray.h&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span>ROFL</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">static</span> Vec2f WorldToScreen(Vec2f worldPos, Vec2f cameraPos, Vec2f cameraFov, Vec2i resolution)</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        Vec2f relativeToCameraWorldPos = worldPos - cameraPos;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        relativeToCameraWorldPos = { relativeToCameraWorldPos.x, -relativeToCameraWorldPos.y };</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        Vec2f screenPosWorld = cameraFov / 2 + relativeToCameraWorldPos;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keywordflow">return</span> Vec2f((screenPosWorld.x * <span class="keywordtype">float</span>(resolution.w) / cameraFov.w), (screenPosWorld.y * <span class="keywordtype">float</span>(resolution.h) / cameraFov.h));</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    }</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> WorldToScreen(<span class="keywordtype">float</span> value, Vec2f cameraPos, Vec2f cameraFov, Vec2i resolution)</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        Vec2f dist = cameraPos + Vec2f{value, 0};</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        Vec2i camS = WorldToScreen(cameraPos, cameraPos, cameraFov, resolution);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        Vec2i distS = WorldToScreen(dist, cameraPos, cameraFov, resolution);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keywordflow">return</span> (<span class="keywordtype">int</span>)Distance(camS, distS);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    }</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">static</span> Vec2f ScreenToWorld(Vec2i screenPos, Vec2f cameraPos, Vec2f cameraFov, Vec2i resolution)</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">return</span> {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>             (cameraFov.x * (screenPos.x - (float(resolution.x) / 2.f) + (<span class="keywordtype">float</span>(resolution.x) * cameraPos.x) / cameraFov.x)) / <span class="keywordtype">float</span>(resolution.x),</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            -(cameraFov.y * (screenPos.y - (float(resolution.y) / 2.f) - (<span class="keywordtype">float</span>(resolution.y) * cameraPos.y) / cameraFov.y)) / <span class="keywordtype">float</span>(resolution.y)</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        };</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    }</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="group___conversions.html#gad3d3f94c183f9f44d531aaa7c3e5ba73">   14</a></span>    <span class="keyword">extern</span> <a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2i</a> <a class="code hl_function" href="group___conversions.html#ga15e9af94e338e509280f2c02597fa2d6">WorldToScreen</a>(<a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2f</a> worldPos, <a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2f</a> cameraPos, <a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2f</a> cameraFov, <a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2i</a> resolution);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="group___conversions.html#ga15e9af94e338e509280f2c02597fa2d6">   16</a></span>    <span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code hl_function" href="group___conversions.html#ga15e9af94e338e509280f2c02597fa2d6">WorldToScreen</a>(<span class="keywordtype">float</span> value, <a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2f</a> cameraPos, <a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2f</a> cameraFov, <a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2i</a> resolution);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="group___conversions.html#ga174c942ce9be59cc4f86c4171292d2a6">   18</a></span>    <span class="keyword">extern</span> <a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2f</a> <a class="code hl_function" href="group___conversions.html#ga174c942ce9be59cc4f86c4171292d2a6">ScreenToWorld</a>(<a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2i</a> screenPos, <a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2f</a> cameraPos, <a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2f</a> cameraFov, <a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2i</a> resolution);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
+<div class="ttc" id="agroup___conversions_html_ga15e9af94e338e509280f2c02597fa2d6"><div class="ttname"><a href="group___conversions.html#ga15e9af94e338e509280f2c02597fa2d6">ROFL::WorldToScreen</a></div><div class="ttdeci">int WorldToScreen(float value, Vec2f cameraPos, Vec2f cameraFov, Vec2i resolution)</div><div class="ttdoc">Converts value in World to value in Screen space.</div></div>
+<div class="ttc" id="agroup___conversions_html_ga174c942ce9be59cc4f86c4171292d2a6"><div class="ttname"><a href="group___conversions.html#ga174c942ce9be59cc4f86c4171292d2a6">ROFL::ScreenToWorld</a></div><div class="ttdeci">Vec2f ScreenToWorld(Vec2i screenPos, Vec2f cameraPos, Vec2f cameraFov, Vec2i resolution)</div><div class="ttdoc">Converts Screen position to position in World.</div></div>
+<div class="ttc" id="astruct_r_o_f_l_1_1_vec2_html"><div class="ttname"><a href="struct_r_o_f_l_1_1_vec2.html">ROFL::Vec2&lt; int &gt;</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_0b6ee6e7e9547e675db4add2e5de97da.html">Engine</a></li><li class="navelem"><a class="el" href="dir_6c1eb5fc1071da5e45cf7606d68b026e.html">source</a></li><li class="navelem"><a class="el" href="dir_45abc721adbfd16d0d163c90021cb48d.html">Utility</a></li><li class="navelem"><a class="el" href="dir_49404d3c2665f1d17ea9e2cb487d137d.html">Math</a></li><li class="navelem"><b>Geometry.h</b></li>
+    <li class="navelem"><a class="el" href="dir_0b6ee6e7e9547e675db4add2e5de97da.html">Engine</a></li><li class="navelem"><a class="el" href="dir_6c1eb5fc1071da5e45cf7606d68b026e.html">source</a></li><li class="navelem"><a class="el" href="dir_3c85996d42e28de59805678dce196b89.html">Math</a></li><li class="navelem"><b>Geometry.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
   </ul>
 </div>

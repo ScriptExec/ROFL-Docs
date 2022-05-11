@@ -1,5 +1,10 @@
 var NAVTREEINDEX1 =
 {
+"struct_r_o_f_l_1_1_color_palette.html":[3,4,1],
+"struct_r_o_f_l_1_1_component.html":[4,0,0,15],
+"struct_r_o_f_l_1_1_h_s_v.html":[3,4,2],
+"struct_r_o_f_l_1_1_physical_material.html":[4,0,0,36],
+"struct_r_o_f_l_1_1_polygon.html":[4,0,0,37],
 "struct_r_o_f_l_1_1_polygon_collider_component.html":[4,0,0,38],
 "struct_r_o_f_l_1_1_post_process_1_1_transitions.html":[4,0,0,39,1],
 "struct_r_o_f_l_1_1_r_o_f_l___collision.html":[4,0,0,46],

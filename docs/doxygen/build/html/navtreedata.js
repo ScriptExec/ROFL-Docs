@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "ROFL", "index.html", [
-    [ "Overview", "index.html", [
+    [ "Overview", "index.html#autotoc_md0", [
       [ "ROFL", "index.html#autotoc_md1", null ],
       [ "Features", "index.html#autotoc_md3", [
         [ "Rendering Pipeline", "index.html#autotoc_md4", null ],
@@ -37,7 +37,7 @@ var NAVTREE =
       [ "Include", "index.html#autotoc_md10", null ]
     ] ],
     [ "Hello ROFL", "md_pages_hello.html", [
-      [ "## Setup", "md_pages_hello.html#autotoc_md12", [
+      [ "Setup", "md_pages_hello.html#autotoc_md12", [
         [ "Visual Studio", "md_pages_hello.html#autotoc_md13", null ]
       ] ],
       [ "Linking", "md_pages_hello.html#autotoc_md14", null ],

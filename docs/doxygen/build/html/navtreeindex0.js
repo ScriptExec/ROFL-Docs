@@ -216,7 +216,7 @@ var NAVTREEINDEX0 =
 "hints_8h_source.html":[5,0,0,0,4,0,0],
 "image_8h_source.html":[5,0,0,0,4,0,1],
 "index.html":[],
-"index.html":[0],
+"index.html#autotoc_md0":[0],
 "index.html#autotoc_md1":[0,0],
 "index.html#autotoc_md10":[0,3],
 "index.html#autotoc_md3":[0,1],

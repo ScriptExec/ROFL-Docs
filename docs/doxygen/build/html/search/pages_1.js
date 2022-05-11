@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rofl_0',['ROFL',['../index.html',1,'']]]
+  ['license_0',['License',['../md_pages_license.html',1,'']]]
 ];

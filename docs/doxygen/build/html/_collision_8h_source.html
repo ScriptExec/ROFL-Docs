@@ -2,38 +2,42 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.3"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ROFL: Collision.h Source File</title>
-<link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+	<meta name="generator" content="Doxygen 1.9.3"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>ROFL: Collision.h Source File</title>
+	<link href="tabs.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="dynsections.js"></script>
+	<link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
+	<link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="sidebar.css" rel="stylesheet" type="text/css"/>
+	<link href="doxygen.css" rel="stylesheet" type="text/css" />
+	<link href="sidebar.css" rel="stylesheet" type="text/css"/>
 <link href="style.css" rel="stylesheet" type="text/css"/>
 <link href="inline-params.css" rel="stylesheet" type="text/css"/>
 <link href="sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="darkmode-toggle.js"></script>
-<script type="text/javascript">
-    DoxygenAwesomeDarkModeToggle.init()
-</script>
-<script type="text/javascript" src="fragment-copy-button.js"></script>
-<script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
-</script>
-<script type="text/javascript" src="paragraph-link.js"></script>
-<script type="text/javascript">
-    DoxygenAwesomeParagraphLink.init()
-</script>
+	<script type="text/javascript" src="darkmode-toggle.js"></script>
+	<script type="text/javascript">
+		DoxygenAwesomeDarkModeToggle.init()
+	</script>
+	<script type="text/javascript" src="fragment-copy-button.js"></script>
+	<script type="text/javascript">
+		DoxygenAwesomeFragmentCopyButton.init()
+	</script>
+	<script type="text/javascript" src="paragraph-link.js"></script>
+	<script type="text/javascript">
+		DoxygenAwesomeParagraphLink.init()
+	</script>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -109,7 +113,7 @@ $(document).ready(function(){initNavTree('_collision_8h_source.html',''); initRe
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span>ROFL</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="struct_r_o_f_l_1_1_r_o_f_l___collision.html">    7</a></span>    <span class="keyword">extern</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_r_o_f_l_1_1_r_o_f_l___collision.html">ROFL_Collision</a></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="struct_r_o_f_l_1_1_r_o_f_l___collision.html">    7</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_r_o_f_l_1_1_r_o_f_l___collision.html">ROFL_Collision</a></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    {</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        <span class="comment">//Convex Polygon</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="keywordtype">bool</span> PolygonVsPolygon(<span class="keyword">const</span> std::vector&lt;Vec2f&gt;&amp; vertices1, <span class="keyword">const</span> std::vector&lt;Vec2f&gt;&amp; vertices2);</div>
@@ -142,8 +146,9 @@ $(document).ready(function(){initNavTree('_collision_8h_source.html',''); initRe
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordtype">bool</span> CircleVsLine(<a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2f</a> circleCenter, <span class="keywordtype">float</span> radius, <span class="keyword">const</span> <a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2f</a>&amp; lp1, <span class="keyword">const</span> <a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2f</a>&amp; lp2);</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordtype">bool</span> CircleVsLineSegment(<a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2f</a> circleCenter, <span class="keywordtype">float</span> radius, <span class="keyword">const</span> <a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2f</a>&amp; lp1, <span class="keyword">const</span> <a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2f</a>&amp; lp2);</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordtype">bool</span> CircleVsPoint(<a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2f</a> circleCenter, <span class="keywordtype">float</span> radius, <span class="keyword">const</span> <a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2f</a>&amp; point);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    } Collision;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    };</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">extern</span> <a class="code hl_struct" href="struct_r_o_f_l_1_1_r_o_f_l___collision.html">ROFL_Collision</a> Collision;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
 <div class="ttc" id="astruct_r_o_f_l_1_1_r_o_f_l___collision_html"><div class="ttname"><a href="struct_r_o_f_l_1_1_r_o_f_l___collision.html">ROFL::ROFL_Collision</a></div><div class="ttdef"><b>Definition:</b> Collision.h:8</div></div>
 <div class="ttc" id="astruct_r_o_f_l_1_1_ray_html"><div class="ttname"><a href="struct_r_o_f_l_1_1_ray.html">ROFL::Ray</a></div><div class="ttdef"><b>Definition:</b> Ray.h:9</div></div>
 <div class="ttc" id="astruct_r_o_f_l_1_1_vec2_html"><div class="ttname"><a href="struct_r_o_f_l_1_1_vec2.html">ROFL::Vec2&lt; float &gt;</a></div></div>

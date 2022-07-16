@@ -6,6 +6,7 @@ var dir_7a88b61e67a977211276f23adf643907 =
     [ "ColliderComponent.h", "_collider_component_8h_source.html", null ],
     [ "Component.h", "_component_8h_source.html", null ],
     [ "RigidBodyComponent.h", "_rigid_body_component_8h_source.html", null ],
+    [ "ScriptComponent.h", "_script_component_8h_source.html", null ],
     [ "SpriteComponent.h", "_sprite_component_8h_source.html", null ],
     [ "TransformComponent.h", "_transform_component_8h_source.html", null ]
 ];

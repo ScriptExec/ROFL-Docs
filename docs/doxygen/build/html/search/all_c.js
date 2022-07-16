@@ -1,9 +1,10 @@
 var searchData=
 [
   ['math_0',['Math',['../group___math.html',1,'']]],
-  ['max_1',['Max',['../class_r_o_f_l_1_1_r_o_f_l___math.html#a052c0c9ff4f0c4da8a7842aa3d8ecfa5',1,'ROFL::ROFL_Math']]],
-  ['messagebox_2',['MessageBox',['../class_r_o_f_l_1_1_r_o_f_l___engine.html#ac7027b501ecf05178690be4d79fa68b2',1,'ROFL::ROFL_Engine']]],
-  ['min_3',['Min',['../class_r_o_f_l_1_1_r_o_f_l___math.html#ad853809b1150be5ec5130e23397e3549',1,'ROFL::ROFL_Math']]],
-  ['mod_4',['Mod',['../class_r_o_f_l_1_1_r_o_f_l___math.html#ad302a9417db570e3f885ea0451b0caab',1,'ROFL::ROFL_Math']]],
-  ['mouse_5',['Mouse',['../class_r_o_f_l_1_1_mouse.html',1,'ROFL']]]
+  ['max_1',['Max',['../class_r_o_f_l_1_1_r_o_f_l___math.html#a55ddf4bb73bee91b9cc9536dc9484ba9',1,'ROFL::ROFL_Math']]],
+  ['memorymetrics_2',['MemoryMetrics',['../struct_r_o_f_l_1_1_memory_metrics.html',1,'ROFL']]],
+  ['messagebox_3',['MessageBox',['../class_r_o_f_l_1_1_r_o_f_l___engine.html#ac7027b501ecf05178690be4d79fa68b2',1,'ROFL::ROFL_Engine']]],
+  ['min_4',['Min',['../class_r_o_f_l_1_1_r_o_f_l___math.html#aac64497ff76a858ca713041baab500ab',1,'ROFL::ROFL_Math']]],
+  ['mod_5',['Mod',['../class_r_o_f_l_1_1_r_o_f_l___math.html#af3cf2618ea3f5eb40a97e54df8711837',1,'ROFL::ROFL_Math::Mod(Numeric Value, Numeric Divisor)'],['../class_r_o_f_l_1_1_r_o_f_l___math.html#a59604bc238911402404671eafc1904ff',1,'ROFL::ROFL_Math::Mod(Numeric Value, Numeric Divisor)']]],
+  ['mouse_6',['Mouse',['../class_r_o_f_l_1_1_mouse.html',1,'ROFL']]]
 ];

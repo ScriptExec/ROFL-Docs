@@ -2,38 +2,42 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.3"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ROFL: Renderer.h Source File</title>
-<link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+	<meta name="generator" content="Doxygen 1.9.3"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>ROFL: Renderer.h Source File</title>
+	<link href="tabs.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="dynsections.js"></script>
+	<link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
+	<link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="sidebar.css" rel="stylesheet" type="text/css"/>
+	<link href="doxygen.css" rel="stylesheet" type="text/css" />
+	<link href="sidebar.css" rel="stylesheet" type="text/css"/>
 <link href="style.css" rel="stylesheet" type="text/css"/>
 <link href="inline-params.css" rel="stylesheet" type="text/css"/>
 <link href="sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="darkmode-toggle.js"></script>
-<script type="text/javascript">
-    DoxygenAwesomeDarkModeToggle.init()
-</script>
-<script type="text/javascript" src="fragment-copy-button.js"></script>
-<script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
-</script>
-<script type="text/javascript" src="paragraph-link.js"></script>
-<script type="text/javascript">
-    DoxygenAwesomeParagraphLink.init()
-</script>
+	<script type="text/javascript" src="darkmode-toggle.js"></script>
+	<script type="text/javascript">
+		DoxygenAwesomeDarkModeToggle.init()
+	</script>
+	<script type="text/javascript" src="fragment-copy-button.js"></script>
+	<script type="text/javascript">
+		DoxygenAwesomeFragmentCopyButton.init()
+	</script>
+	<script type="text/javascript" src="paragraph-link.js"></script>
+	<script type="text/javascript">
+		DoxygenAwesomeParagraphLink.init()
+	</script>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -146,16 +150,16 @@ $(document).ready(function(){initNavTree('_graphics_2_renderer_2renderer_8h_sour
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordtype">void</span> DrawFilledPolygon(<span class="keyword">const</span> std::vector&lt;Vec2i&gt;&amp; vertices);</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordtype">void</span> DrawFilledPolygon(<a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2i</a> center, <span class="keyword">const</span> std::vector&lt;Vec2i&gt;&amp; vertices);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordtype">void</span> DrawFilledRect(std::optional&lt;Recti&gt; rect);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordtype">void</span> DrawFilledRect(Nullable&lt;Recti&gt; rect);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordtype">void</span> DrawFilledCircle(<a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2i</a> pos, Uint32 radius, <span class="keywordtype">bool</span> precise = <span class="keyword">false</span>);</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordtype">void</span> DrawTexture(<a class="code hl_class" href="class_r_o_f_l_1_1_texture.html">Texture</a>* texture, Nullable&lt;Recti&gt; source, Nullable&lt;Recti&gt; destination, <span class="keywordtype">double</span> angle, Nullable&lt;Vec2i&gt; pivot, <span class="keywordtype">int</span> flip, Nullable&lt;Color&gt; rgba);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordtype">void</span> DrawGeometry(<a class="code hl_class" href="class_r_o_f_l_1_1_texture.html">Texture</a>* texture, <span class="keyword">const</span> std::vector&lt;Vertex&gt;&amp; vertices);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordtype">void</span> DrawGeometry(<a class="code hl_class" href="class_r_o_f_l_1_1_texture.html">Texture</a>* texture, <span class="keyword">const</span> std::vector&lt;Vertex&gt;&amp; vertices, <span class="keyword">const</span> std::vector&lt;int&gt;&amp; indices);</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        ErrorCode Init(<a class="code hl_class" href="class_r_o_f_l_1_1_window.html">Window</a>* window, Uint32 flags);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        ErrorCode Init(<a class="code hl_class" href="class_r_o_f_l_1_1_window.html">Window</a>* window, Uint32 flags, AntialiasingMode antialiasing);</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        SDL_Renderer* GetNativePtr();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        SDL_Renderer* GetNativePtr() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        ErrorCode SetTarget(<a class="code hl_class" href="class_r_o_f_l_1_1_texture.html">Texture</a>* target, <span class="keywordtype">int</span> layer = 0);</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordtype">void</span> SetLayer(<span class="keywordtype">int</span> layer);</div>
@@ -165,46 +169,51 @@ $(document).ready(function(){initNavTree('_graphics_2_renderer_2renderer_8h_sour
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        ErrorCode SetDrawColor(Uint8 r, Uint8 g, Uint8 b, Uint8 a);</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        ErrorCode SetDrawColor(<span class="keyword">const</span> <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a>&amp; rgba);</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> GetDrawColor();</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordtype">void</span> RenderScene();</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordtype">void</span> SubmitLine(<a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2i</a> start, <a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2i</a> end, <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordtype">void</span> SubmitLines(<span class="keyword">const</span> std::vector&lt;Vec2i&gt;&amp; arr, <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordtype">void</span> SubmitPoints(<span class="keyword">const</span> std::vector&lt;Vec2i&gt;&amp; arr, <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordtype">void</span> SubmitRect(<a class="code hl_class" href="struct_r_o_f_l_1_1_rect.html">Recti</a> rect, <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordtype">void</span> SubmitPolygon(std::vector&lt;Vec2i&gt; vertices, <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordtype">void</span> SubmitPolygon(<a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2i</a> center, std::vector&lt;Vec2i&gt; vertices, <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordtype">void</span> SubmitFilledPolygon(<span class="keyword">const</span> std::vector&lt;Vec2i&gt;&amp; vertices, <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordtype">void</span> SubmitFilledPolygon(<a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2i</a> center, <span class="keyword">const</span> std::vector&lt;Vec2i&gt;&amp; vertices, <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordtype">void</span> SubmitFilledRect(std::optional&lt;Recti&gt; rect, <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordtype">void</span> SubmitCircle(<a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2i</a> pos, Uint32 radius, <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordtype">void</span> SubmitFilledCircle(<a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2i</a> pos, Uint32 radius, <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordtype">void</span> SubmitText(<a class="code hl_class" href="class_r_o_f_l_1_1_text.html">Text</a>* text, std::optional&lt;Recti&gt; source, std::optional&lt;Recti&gt; destination);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordtype">void</span> SubmitSprite(<span class="keyword">const</span> <a class="code hl_class" href="class_r_o_f_l_1_1_sprite.html">Sprite</a>&amp; sprite, std::optional&lt;Recti&gt; destination, <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordtype">void</span> SubmitSprite(<span class="keyword">const</span> <a class="code hl_class" href="class_r_o_f_l_1_1_sprite.html">Sprite</a>&amp; sprite, std::optional&lt;Recti&gt; destination, <span class="keywordtype">double</span> angle, Nullable&lt;Vec2i&gt; pivot, <span class="keywordtype">int</span> flip, <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordtype">void</span> SubmitVideo(<a class="code hl_class" href="class_r_o_f_l_1_1_video.html">Video</a>* video, std::optional&lt;Recti&gt; source, std::optional&lt;Recti&gt; destination);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordtype">void</span> SubmitUI(<a class="code hl_class" href="class_r_o_f_l_1_1_u_i_canvas.html">UICanvas</a>* ui);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="class_r_o_f_l_1_1_r_o_f_l___renderer.html#a5e1e979c6f0a1eecd766aacc4e0778f3">   93</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_r_o_f_l_1_1_r_o_f_l___renderer.html#a5e1e979c6f0a1eecd766aacc4e0778f3">SubmitTexture</a>(<a class="code hl_class" href="class_r_o_f_l_1_1_texture.html">Texture</a>* texture, Nullable&lt;Recti&gt; source, Nullable&lt;Recti&gt; destination);</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="class_r_o_f_l_1_1_r_o_f_l___renderer.html#aa642012654a35fc1d3e4ddff316ffdb5">   94</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_r_o_f_l_1_1_r_o_f_l___renderer.html#aa642012654a35fc1d3e4ddff316ffdb5">SubmitTexture</a>(<a class="code hl_class" href="class_r_o_f_l_1_1_texture.html">Texture</a>* texture, Nullable&lt;Recti&gt; source, Nullable&lt;Recti&gt; destination, <span class="keywordtype">double</span> angle, Nullable&lt;Vec2i&gt; pivot, <span class="keywordtype">int</span> flip, Nullable&lt;Color&gt; rgba);</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="class_r_o_f_l_1_1_r_o_f_l___renderer.html#a3ba3f916e444aac8127721c83c50215b">   95</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_r_o_f_l_1_1_r_o_f_l___renderer.html#a3ba3f916e444aac8127721c83c50215b">SubmitGeometry</a>(<a class="code hl_class" href="class_r_o_f_l_1_1_texture.html">Texture</a>* texture, <span class="keyword">const</span> std::vector&lt;Vertex&gt;&amp; vertices);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="class_r_o_f_l_1_1_r_o_f_l___renderer.html#a67c769bf6fbfa88ca7363d33c0d3a6cc">   96</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_r_o_f_l_1_1_r_o_f_l___renderer.html#a67c769bf6fbfa88ca7363d33c0d3a6cc">SubmitGeometry</a>(<a class="code hl_class" href="class_r_o_f_l_1_1_texture.html">Texture</a>* texture, <span class="keyword">const</span> std::vector&lt;Vertex&gt;&amp; vertices, <span class="keyword">const</span> std::vector&lt;int&gt;&amp; indices);</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_r_o_f_l_1_1_r_o_f_l___engine.html">ROFL_Engine</a>;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    };</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keyword">extern</span> <a class="code hl_class" href="class_r_o_f_l_1_1_r_o_f_l___renderer.html">ROFL_Renderer</a> Renderer;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
-<div class="ttc" id="aclass_r_o_f_l_1_1_r_o_f_l___engine_html"><div class="ttname"><a href="class_r_o_f_l_1_1_r_o_f_l___engine.html">ROFL::ROFL_Engine</a></div><div class="ttdef"><b>Definition:</b> ROFL_Engine.h:25</div></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> GetDrawColor() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2i</a> GetTargetSize() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordtype">void</span> RenderScene();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordtype">void</span> SubmitFill(Uint8 r, Uint8 g, Uint8 b, Uint8 a, Nullable&lt;int&gt; layer = std::nullopt);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordtype">void</span> SubmitFill(<a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba, Nullable&lt;int&gt; layer = std::nullopt);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordtype">void</span> SubmitLine(<a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2i</a> start, <a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2i</a> end, <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba, Nullable&lt;int&gt; layer = std::nullopt);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordtype">void</span> SubmitLines(<span class="keyword">const</span> std::vector&lt;Vec2i&gt;&amp; arr, <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba, Nullable&lt;int&gt; layer = std::nullopt);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordtype">void</span> SubmitPoints(<span class="keyword">const</span> std::vector&lt;Vec2i&gt;&amp; arr, <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba, Nullable&lt;int&gt; layer = std::nullopt);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordtype">void</span> SubmitRect(<a class="code hl_class" href="struct_r_o_f_l_1_1_rect.html">Recti</a> rect, <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba, Nullable&lt;int&gt; layer = std::nullopt);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordtype">void</span> SubmitPolygon(std::vector&lt;Vec2i&gt; vertices, <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba, Nullable&lt;int&gt; layer = std::nullopt);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordtype">void</span> SubmitPolygon(<a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2i</a> center, std::vector&lt;Vec2i&gt; vertices, <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba, Nullable&lt;int&gt; layer = std::nullopt);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordtype">void</span> SubmitFilledPolygon(<span class="keyword">const</span> std::vector&lt;Vec2i&gt;&amp; vertices, <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba, Nullable&lt;int&gt; layer = std::nullopt);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordtype">void</span> SubmitFilledPolygon(<a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2i</a> center, <span class="keyword">const</span> std::vector&lt;Vec2i&gt;&amp; vertices, <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba, Nullable&lt;int&gt; layer = std::nullopt);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordtype">void</span> SubmitFilledRect(Nullable&lt;Recti&gt; rect, <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba, Nullable&lt;int&gt; layer = std::nullopt);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordtype">void</span> SubmitCircle(<a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2i</a> pos, Uint32 radius, <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba, Nullable&lt;int&gt; layer = std::nullopt);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordtype">void</span> SubmitFilledCircle(<a class="code hl_class" href="struct_r_o_f_l_1_1_vec2.html">Vec2i</a> pos, Uint32 radius, <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba, Nullable&lt;int&gt; layer = std::nullopt);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordtype">void</span> SubmitText(<a class="code hl_class" href="class_r_o_f_l_1_1_text.html">Text</a>* text, Nullable&lt;Recti&gt; source, Nullable&lt;Recti&gt; destination, Nullable&lt;int&gt; layer = std::nullopt);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordtype">void</span> SubmitSprite(<span class="keyword">const</span> <a class="code hl_class" href="class_r_o_f_l_1_1_sprite.html">Sprite</a>&amp; sprite, Nullable&lt;Recti&gt; destination, <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba, Nullable&lt;int&gt; layer = std::nullopt);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordtype">void</span> SubmitSprite(<span class="keyword">const</span> <a class="code hl_class" href="class_r_o_f_l_1_1_sprite.html">Sprite</a>&amp; sprite, Nullable&lt;Recti&gt; destination, <span class="keywordtype">double</span> angle, Nullable&lt;Vec2i&gt; pivot, <span class="keywordtype">int</span> flip, <a class="code hl_struct" href="struct_r_o_f_l_1_1_color.html">Color</a> rgba, Nullable&lt;int&gt; layer = std::nullopt);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordtype">void</span> SubmitVideo(<a class="code hl_class" href="class_r_o_f_l_1_1_video.html">Video</a>* video, Nullable&lt;Recti&gt; source, Nullable&lt;Recti&gt; destination, Nullable&lt;int&gt; layer = std::nullopt);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordtype">void</span> SubmitUI(<a class="code hl_class" href="class_r_o_f_l_1_1_u_i_canvas.html">UICanvas</a>* ui);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keywordtype">void</span> SubmitDrawCall(<span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>()&gt;&amp; Call);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="class_r_o_f_l_1_1_r_o_f_l___renderer.html#ae416539ebf33e0a567e5d211b4ce96b1">   98</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_r_o_f_l_1_1_r_o_f_l___renderer.html#ae416539ebf33e0a567e5d211b4ce96b1">SubmitTexture</a>(<a class="code hl_class" href="class_r_o_f_l_1_1_texture.html">Texture</a>* texture, Nullable&lt;Recti&gt; source, Nullable&lt;Recti&gt; destination, Nullable&lt;int&gt; layer = std::nullopt);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="class_r_o_f_l_1_1_r_o_f_l___renderer.html#ad7cbc84e00c70c8c53bb135a396c3f1b">   99</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_r_o_f_l_1_1_r_o_f_l___renderer.html#ad7cbc84e00c70c8c53bb135a396c3f1b">SubmitTexture</a>(<a class="code hl_class" href="class_r_o_f_l_1_1_texture.html">Texture</a>* texture, Nullable&lt;Recti&gt; source, Nullable&lt;Recti&gt; destination, <span class="keywordtype">double</span> angle, Nullable&lt;Vec2i&gt; pivot, <span class="keywordtype">int</span> flip, Nullable&lt;Color&gt; rgba, Nullable&lt;int&gt; layer = std::nullopt);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="class_r_o_f_l_1_1_r_o_f_l___renderer.html#a806451393810befb394447575e1c50c6">  100</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_r_o_f_l_1_1_r_o_f_l___renderer.html#a806451393810befb394447575e1c50c6">SubmitGeometry</a>(<a class="code hl_class" href="class_r_o_f_l_1_1_texture.html">Texture</a>* texture, <span class="keyword">const</span> std::vector&lt;Vertex&gt;&amp; vertices, Nullable&lt;int&gt; layer = std::nullopt);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="class_r_o_f_l_1_1_r_o_f_l___renderer.html#ada65787d2e12ce19e4c77d84cc7812da">  101</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_r_o_f_l_1_1_r_o_f_l___renderer.html#ada65787d2e12ce19e4c77d84cc7812da">SubmitGeometry</a>(<a class="code hl_class" href="class_r_o_f_l_1_1_texture.html">Texture</a>* texture, <span class="keyword">const</span> std::vector&lt;Vertex&gt;&amp; vertices, <span class="keyword">const</span> std::vector&lt;int&gt;&amp; indices, Nullable&lt;int&gt; layer = std::nullopt);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_r_o_f_l_1_1_r_o_f_l___engine.html">ROFL_Engine</a>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    };</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keyword">extern</span> <a class="code hl_class" href="class_r_o_f_l_1_1_r_o_f_l___renderer.html">ROFL_Renderer</a> Renderer;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}</div>
+<div class="ttc" id="aclass_r_o_f_l_1_1_r_o_f_l___engine_html"><div class="ttname"><a href="class_r_o_f_l_1_1_r_o_f_l___engine.html">ROFL::ROFL_Engine</a></div><div class="ttdef"><b>Definition:</b> ROFL_Engine.h:23</div></div>
 <div class="ttc" id="aclass_r_o_f_l_1_1_r_o_f_l___renderer_html"><div class="ttname"><a href="class_r_o_f_l_1_1_r_o_f_l___renderer.html">ROFL::ROFL_Renderer</a></div><div class="ttdef"><b>Definition:</b> Graphics/Renderer/renderer.h:26</div></div>
-<div class="ttc" id="aclass_r_o_f_l_1_1_r_o_f_l___renderer_html_a3ba3f916e444aac8127721c83c50215b"><div class="ttname"><a href="class_r_o_f_l_1_1_r_o_f_l___renderer.html#a3ba3f916e444aac8127721c83c50215b">ROFL::ROFL_Renderer::SubmitGeometry</a></div><div class="ttdeci">void SubmitGeometry(Texture *texture, const std::vector&lt; Vertex &gt; &amp;vertices)</div><div class="ttdoc">Submits the texture to the renderer.</div></div>
-<div class="ttc" id="aclass_r_o_f_l_1_1_r_o_f_l___renderer_html_a5e1e979c6f0a1eecd766aacc4e0778f3"><div class="ttname"><a href="class_r_o_f_l_1_1_r_o_f_l___renderer.html#a5e1e979c6f0a1eecd766aacc4e0778f3">ROFL::ROFL_Renderer::SubmitTexture</a></div><div class="ttdeci">void SubmitTexture(Texture *texture, Nullable&lt; Recti &gt; source, Nullable&lt; Recti &gt; destination)</div><div class="ttdoc">Submits the texture to the renderer.</div></div>
-<div class="ttc" id="aclass_r_o_f_l_1_1_r_o_f_l___renderer_html_a67c769bf6fbfa88ca7363d33c0d3a6cc"><div class="ttname"><a href="class_r_o_f_l_1_1_r_o_f_l___renderer.html#a67c769bf6fbfa88ca7363d33c0d3a6cc">ROFL::ROFL_Renderer::SubmitGeometry</a></div><div class="ttdeci">void SubmitGeometry(Texture *texture, const std::vector&lt; Vertex &gt; &amp;vertices, const std::vector&lt; int &gt; &amp;indices)</div><div class="ttdoc">Submits the texture to the renderer.</div></div>
-<div class="ttc" id="aclass_r_o_f_l_1_1_r_o_f_l___renderer_html_aa642012654a35fc1d3e4ddff316ffdb5"><div class="ttname"><a href="class_r_o_f_l_1_1_r_o_f_l___renderer.html#aa642012654a35fc1d3e4ddff316ffdb5">ROFL::ROFL_Renderer::SubmitTexture</a></div><div class="ttdeci">void SubmitTexture(Texture *texture, Nullable&lt; Recti &gt; source, Nullable&lt; Recti &gt; destination, double angle, Nullable&lt; Vec2i &gt; pivot, int flip, Nullable&lt; Color &gt; rgba)</div><div class="ttdoc">Submits the texture to the renderer.</div></div>
+<div class="ttc" id="aclass_r_o_f_l_1_1_r_o_f_l___renderer_html_a806451393810befb394447575e1c50c6"><div class="ttname"><a href="class_r_o_f_l_1_1_r_o_f_l___renderer.html#a806451393810befb394447575e1c50c6">ROFL::ROFL_Renderer::SubmitGeometry</a></div><div class="ttdeci">void SubmitGeometry(Texture *texture, const std::vector&lt; Vertex &gt; &amp;vertices, Nullable&lt; int &gt; layer=std::nullopt)</div><div class="ttdoc">Submits the texture to the renderer.</div></div>
+<div class="ttc" id="aclass_r_o_f_l_1_1_r_o_f_l___renderer_html_ad7cbc84e00c70c8c53bb135a396c3f1b"><div class="ttname"><a href="class_r_o_f_l_1_1_r_o_f_l___renderer.html#ad7cbc84e00c70c8c53bb135a396c3f1b">ROFL::ROFL_Renderer::SubmitTexture</a></div><div class="ttdeci">void SubmitTexture(Texture *texture, Nullable&lt; Recti &gt; source, Nullable&lt; Recti &gt; destination, double angle, Nullable&lt; Vec2i &gt; pivot, int flip, Nullable&lt; Color &gt; rgba, Nullable&lt; int &gt; layer=std::nullopt)</div><div class="ttdoc">Submits the texture to the renderer.</div></div>
+<div class="ttc" id="aclass_r_o_f_l_1_1_r_o_f_l___renderer_html_ada65787d2e12ce19e4c77d84cc7812da"><div class="ttname"><a href="class_r_o_f_l_1_1_r_o_f_l___renderer.html#ada65787d2e12ce19e4c77d84cc7812da">ROFL::ROFL_Renderer::SubmitGeometry</a></div><div class="ttdeci">void SubmitGeometry(Texture *texture, const std::vector&lt; Vertex &gt; &amp;vertices, const std::vector&lt; int &gt; &amp;indices, Nullable&lt; int &gt; layer=std::nullopt)</div><div class="ttdoc">Submits the texture to the renderer.</div></div>
+<div class="ttc" id="aclass_r_o_f_l_1_1_r_o_f_l___renderer_html_ae416539ebf33e0a567e5d211b4ce96b1"><div class="ttname"><a href="class_r_o_f_l_1_1_r_o_f_l___renderer.html#ae416539ebf33e0a567e5d211b4ce96b1">ROFL::ROFL_Renderer::SubmitTexture</a></div><div class="ttdeci">void SubmitTexture(Texture *texture, Nullable&lt; Recti &gt; source, Nullable&lt; Recti &gt; destination, Nullable&lt; int &gt; layer=std::nullopt)</div><div class="ttdoc">Submits the texture to the renderer.</div></div>
 <div class="ttc" id="aclass_r_o_f_l_1_1_sprite_html"><div class="ttname"><a href="class_r_o_f_l_1_1_sprite.html">ROFL::Sprite</a></div><div class="ttdef"><b>Definition:</b> Sprite.h:8</div></div>
 <div class="ttc" id="aclass_r_o_f_l_1_1_text_html"><div class="ttname"><a href="class_r_o_f_l_1_1_text.html">ROFL::Text</a></div><div class="ttdef"><b>Definition:</b> Text.h:11</div></div>
 <div class="ttc" id="aclass_r_o_f_l_1_1_texture_html"><div class="ttname"><a href="class_r_o_f_l_1_1_texture.html">ROFL::Texture</a></div><div class="ttdef"><b>Definition:</b> Texture.h:10</div></div>
-<div class="ttc" id="aclass_r_o_f_l_1_1_u_i_canvas_html"><div class="ttname"><a href="class_r_o_f_l_1_1_u_i_canvas.html">ROFL::UICanvas</a></div><div class="ttdef"><b>Definition:</b> Graphics/Ui/UI.h:84</div></div>
+<div class="ttc" id="aclass_r_o_f_l_1_1_u_i_canvas_html"><div class="ttname"><a href="class_r_o_f_l_1_1_u_i_canvas.html">ROFL::UICanvas</a></div><div class="ttdef"><b>Definition:</b> Graphics/UI/UI.h:84</div></div>
 <div class="ttc" id="aclass_r_o_f_l_1_1_video_html"><div class="ttname"><a href="class_r_o_f_l_1_1_video.html">ROFL::Video</a></div><div class="ttdef"><b>Definition:</b> Video.h:10</div></div>
 <div class="ttc" id="aclass_r_o_f_l_1_1_window_html"><div class="ttname"><a href="class_r_o_f_l_1_1_window.html">ROFL::Window</a></div><div class="ttdef"><b>Definition:</b> Graphics/Window/window.h:9</div></div>
 <div class="ttc" id="astruct_r_o_f_l_1_1_color_html"><div class="ttname"><a href="struct_r_o_f_l_1_1_color.html">ROFL::Color</a></div><div class="ttdef"><b>Definition:</b> Color.h:11</div></div>

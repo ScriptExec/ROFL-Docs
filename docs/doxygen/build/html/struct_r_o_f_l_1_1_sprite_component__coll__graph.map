@@ -1,10 +1,11 @@
 <map id="ROFL::SpriteComponent" name="ROFL::SpriteComponent">
-<area shape="rect" id="node1" title=" " alt="" coords="241,349,405,376"/>
-<area shape="rect" id="node2" href="$struct_r_o_f_l_1_1_component.html" title=" " alt="" coords="96,260,227,287"/>
+<area shape="rect" id="node1" title=" " alt="" coords="373,364,537,391"/>
+<area shape="rect" id="node2" href="$struct_r_o_f_l_1_1_component.html" title=" " alt="" coords="96,267,227,294"/>
 <area shape="rect" id="node3" href="$class_r_o_f_l_1_1_generic.html" title=" " alt="" coords="5,155,115,181"/>
 <area shape="rect" id="node4" href="$class_r_o_f_l_1_1_object.html" title=" " alt="" coords="139,155,242,181"/>
-<area shape="rect" id="node5" href="$struct_r_o_f_l_1_1_vec2.html" title=" " alt="" coords="251,260,394,287"/>
+<area shape="rect" id="node5" href="$struct_r_o_f_l_1_1_vec2.html" title=" " alt="" coords="251,267,394,294"/>
 <area shape="rect" id="node6" title=" " alt="" coords="285,5,355,32"/>
 <area shape="rect" id="node7" href="$struct_r_o_f_l_1_1_vec2.html" title=" " alt="" coords="335,155,502,181"/>
-<area shape="rect" id="node8" href="$struct_r_o_f_l_1_1_color.html" title=" " alt="" coords="418,260,513,287"/>
+<area shape="rect" id="node8" href="$struct_r_o_f_l_1_1_sprite_component_1_1_flip.html" title=" " alt="" coords="418,260,582,301"/>
+<area shape="rect" id="node9" href="$struct_r_o_f_l_1_1_color.html" title=" " alt="" coords="606,267,701,294"/>
 </map>

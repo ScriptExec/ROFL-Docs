@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['remainder_0',['Remainder',['../class_r_o_f_l_1_1_r_o_f_l___math.html#ac0cf8d81a2fb04b52c478899c4b2526e',1,'ROFL::ROFL_Math']]],
-  ['round_1',['Round',['../class_r_o_f_l_1_1_r_o_f_l___math.html#abba1e54d8549c9e571ef9f4a2de15e73',1,'ROFL::ROFL_Math']]]
+  ['remainder_0',['Remainder',['../class_r_o_f_l_1_1_r_o_f_l___math.html#ad99c4f3420f494be0b2c1b0c1a78cec5',1,'ROFL::ROFL_Math']]],
+  ['round_1',['Round',['../class_r_o_f_l_1_1_r_o_f_l___math.html#a6674c0a498bcbb887894e36e82429d92',1,'ROFL::ROFL_Math']]]
 ];

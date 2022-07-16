@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('_engine_8h_source.html',''); initResiz
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span>ROFL</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">    #define ROFL_OnBegin() int OnBegin() ROFL_OverrideFunc </span><span class="comment">/*\return Needs to return 0 on success and -1 on failure.*/</span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">    #define ROFL_OnUpdate() int OnUpdate(Event&amp; event, float ElapsedTime) ROFL_OverrideFunc </span><span class="comment">/*\param event (Event&amp;) - Current polled event. \param ElapsedTime (float) - Time delta between frames.\return Needs to return 0 on success and -1 on failure.*/</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">    #define ROFL_OnUpdate() int OnUpdate(Event&amp; Event, float ElapsedTime) ROFL_OverrideFunc </span><span class="comment">/*\param Event (Event&amp;) - Current polled event. \param ElapsedTime (float) - Time delta between frames.\return Needs to return 0 on success and -1 on failure.*/</span><span class="preprocessor"></span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">    #define ROFL_OnQuit() void OnQuit() ROFL_OverrideFunc</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">    #define ROFL_Constructor(Class) Class(int argc = 0, char* argv[] = {}) : ROFL::ROFL_Engine(argc, argv)</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">    #define ROFL_Constructor_Def(Class) Class::Class(int argc, char* argv[])</span></div>
@@ -289,21 +289,13 @@ $(document).ready(function(){initNavTree('_engine_8h_source.html',''); initResiz
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        EVENT_LAST_EVENT = 65535,</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    };</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keyword">enum</span> EngineVar</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keyword">enum</span> PhysicsSimulation</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    {</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        VAR_OBJECTS_NEARBY,</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        VAR_OBJECTS_RENDERED,</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        VAR_OBJECTS_IN_CHUNK,</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        VAR_DRAW_CALLS_PER_FRAME</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    };</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <span class="keyword">enum</span> PhysicsSimulation</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    {</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        PHYSICS_NONE,</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        PHYSICS_FAST,</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        PHYSICS_BEST</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    };</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>}</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        PHYSICS_NONE,</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        PHYSICS_FAST,</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        PHYSICS_BEST</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    };</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

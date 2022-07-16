@@ -27,30 +27,31 @@ var NAVTREE =
   [ "ROFL", "index.html", [
     [ "Overview", "index.html#autotoc_md0", [
       [ "ROFL Engine", "index.html#autotoc_md1", null ],
-      [ "Features", "index.html#autotoc_md3", [
-        [ "Rendering Pipeline", "index.html#autotoc_md4", null ],
-        [ "Input", "index.html#autotoc_md5", null ],
-        [ "AssetManager", "index.html#autotoc_md6", null ],
-        [ "Objects", "index.html#autotoc_md7", null ]
+      [ "Features", "index.html#autotoc_md2", [
+        [ "Renderer", "index.html#autotoc_md3", null ],
+        [ "Input", "index.html#autotoc_md4", null ],
+        [ "AssetManager", "index.html#autotoc_md5", null ],
+        [ "Objects", "index.html#autotoc_md6", null ]
       ] ],
-      [ "Supported Platforms", "index.html#autotoc_md9", null ]
+      [ "Supported Platforms", "index.html#autotoc_md7", null ],
+      [ "Disclaimer", "index.html#autotoc_md8", null ]
     ] ],
     [ "Hello ROFL", "md_pages_hello.html", [
-      [ "Setup", "md_pages_hello.html#autotoc_md11", [
-        [ "Visual Studio", "md_pages_hello.html#autotoc_md12", null ]
+      [ "Setup", "md_pages_hello.html#autotoc_md10", [
+        [ "Visual Studio", "md_pages_hello.html#autotoc_md11", null ]
       ] ],
-      [ "Linking", "md_pages_hello.html#autotoc_md13", null ],
-      [ "Getting Started", "md_pages_hello.html#autotoc_md14", null ]
+      [ "Linking", "md_pages_hello.html#autotoc_md12", null ],
+      [ "Getting Started", "md_pages_hello.html#autotoc_md13", null ]
     ] ],
     [ "License", "md_pages_license.html", [
-      [ "ROFL", "md_pages_license.html#autotoc_md16", null ],
-      [ "Sublicenses", "md_pages_license.html#autotoc_md18", [
-        [ "SDL2", "md_pages_license.html#autotoc_md19", null ],
-        [ "SDL2 Image", "md_pages_license.html#autotoc_md20", null ],
-        [ "SDL2 Mixer", "md_pages_license.html#autotoc_md21", null ],
-        [ "SDL2 TTF", "md_pages_license.html#autotoc_md22", null ],
-        [ "JetBrains Mono", "md_pages_license.html#autotoc_md23", null ],
-        [ "EnTT", "md_pages_license.html#autotoc_md24", null ]
+      [ "ROFL", "md_pages_license.html#autotoc_md15", null ],
+      [ "Sublicenses", "md_pages_license.html#autotoc_md17", [
+        [ "SDL2", "md_pages_license.html#autotoc_md18", null ],
+        [ "SDL2 Image", "md_pages_license.html#autotoc_md19", null ],
+        [ "SDL2 Mixer", "md_pages_license.html#autotoc_md20", null ],
+        [ "SDL2 TTF", "md_pages_license.html#autotoc_md21", null ],
+        [ "JetBrains Mono", "md_pages_license.html#autotoc_md22", null ],
+        [ "EnTT", "md_pages_license.html#autotoc_md23", null ]
       ] ]
     ] ],
     [ "Modules", "modules.html", "modules" ],
@@ -73,7 +74,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_animation_8h_source.html",
-"struct_r_o_f_l_1_1_color_palette.html"
+"pages.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

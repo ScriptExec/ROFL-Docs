@@ -2,38 +2,42 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.3"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ROFL: Keyboard.h Source File</title>
-<link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+	<meta name="generator" content="Doxygen 1.9.3"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>ROFL: Keyboard.h Source File</title>
+	<link href="tabs.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="dynsections.js"></script>
+	<link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
+	<link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="sidebar.css" rel="stylesheet" type="text/css"/>
+	<link href="doxygen.css" rel="stylesheet" type="text/css" />
+	<link href="sidebar.css" rel="stylesheet" type="text/css"/>
 <link href="style.css" rel="stylesheet" type="text/css"/>
 <link href="inline-params.css" rel="stylesheet" type="text/css"/>
 <link href="sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="darkmode-toggle.js"></script>
-<script type="text/javascript">
-    DoxygenAwesomeDarkModeToggle.init()
-</script>
-<script type="text/javascript" src="fragment-copy-button.js"></script>
-<script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
-</script>
-<script type="text/javascript" src="paragraph-link.js"></script>
-<script type="text/javascript">
-    DoxygenAwesomeParagraphLink.init()
-</script>
+	<script type="text/javascript" src="darkmode-toggle.js"></script>
+	<script type="text/javascript">
+		DoxygenAwesomeDarkModeToggle.init()
+	</script>
+	<script type="text/javascript" src="fragment-copy-button.js"></script>
+	<script type="text/javascript">
+		DoxygenAwesomeFragmentCopyButton.init()
+	</script>
+	<script type="text/javascript" src="paragraph-link.js"></script>
+	<script type="text/javascript">
+		DoxygenAwesomeParagraphLink.init()
+	</script>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -128,10 +132,10 @@ $(document).ready(function(){initNavTree('_keyboard_8h_source.html',''); initRes
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <a class="code hl_class" href="class_r_o_f_l_1_1_timer.html">Timer</a> holdTimer;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="keywordtype">bool</span> pressed() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <span class="keywordtype">bool</span> down() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <span class="keywordtype">bool</span> up() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keywordtype">bool</span> released() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="keywordtype">bool</span> Pressed() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <span class="keywordtype">bool</span> Down() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <span class="keywordtype">bool</span> Up() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keywordtype">bool</span> Released() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="keywordtype">double</span> GetHoldTime(TimerFormat format = TIMER_MILLIS);</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_r_o_f_l_1_1_keyboard.html">Keyboard</a>;</div>
@@ -158,11 +162,11 @@ $(document).ready(function(){initNavTree('_keyboard_8h_source.html',''); initRes
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordtype">bool</span> GetKeyModifierState(KeyModifier code);</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_r_o_f_l_1_1_input_handler.html">InputHandler</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_r_o_f_l_1_1_r_o_f_l___input.html">ROFL_Input</a>;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    };</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
-<div class="ttc" id="aclass_r_o_f_l_1_1_input_handler_html"><div class="ttname"><a href="class_r_o_f_l_1_1_input_handler.html">ROFL::InputHandler</a></div><div class="ttdef"><b>Definition:</b> Input/Input.h:12</div></div>
 <div class="ttc" id="aclass_r_o_f_l_1_1_keyboard_html"><div class="ttname"><a href="class_r_o_f_l_1_1_keyboard.html">ROFL::Keyboard</a></div><div class="ttdef"><b>Definition:</b> Keyboard.h:8</div></div>
+<div class="ttc" id="aclass_r_o_f_l_1_1_r_o_f_l___input_html"><div class="ttname"><a href="class_r_o_f_l_1_1_r_o_f_l___input.html">ROFL::ROFL_Input</a></div><div class="ttdef"><b>Definition:</b> Input/Input.h:19</div></div>
 <div class="ttc" id="aclass_r_o_f_l_1_1_timer_html"><div class="ttname"><a href="class_r_o_f_l_1_1_timer.html">ROFL::Timer</a></div><div class="ttdef"><b>Definition:</b> Timer.h:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
